@@ -15,7 +15,7 @@
   box-sizing: border-box;
 }
 body {
-  background-image: url('/src/assets/bg-image.jpg');
+  background-image: url('../public/assets/bg-image.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

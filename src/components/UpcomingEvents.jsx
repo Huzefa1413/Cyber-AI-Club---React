@@ -7,13 +7,13 @@ const UpcomingEvents = () => {
       date: '16 Feb 2023',
       title: 'Seminar',
       text: 'epellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?HuzefaLorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Huzefa',
-      pic: '/static/media/CYBER AI.33ec7d876ea9c96c68f2.png',
+      pic: './assets/CYBER AI.png',
     },
     {
       date: '24 Feb 2023',
       title: 'Seminar',
       text: 'lorem ipsum data hdiajadi',
-      pic: '/static/media/CYBER AI.33ec7d876ea9c96c68f2.png',
+      pic: './assets/CYBER AI.png',
     },
   ];
   return (

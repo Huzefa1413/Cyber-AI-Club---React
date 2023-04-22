@@ -7,81 +7,81 @@ const Teampage = () => {
     {
       name: 'Muhammad Jawwad',
       pos: 'President',
-      pic: './assets/CYBER AI.png',
+      pic: './assets/Team/president.jpeg',
     },
     {
       name: 'Muhammad Umer Amir',
       pos: 'Vice-President',
-      pic: './assets/CYBER AI.png',
+      pic: './assets/Team/vicepresident.jpeg',
     },
   ];
   const generalsecretary = [
     {
       name: 'Daniyal Jameel',
       pos: 'General Secretary',
-      pic: './assets/generalsecretary.jpeg',
+      pic: './assets/Team/generalsecretary.jpeg',
     },
   ];
   const mediaheads = [
     {
       name: 'Saim Rafi',
       pos: 'Media Head',
-      pic: './assets/mediahead1.jpeg',
+      pic: './assets/Team/mediahead1.jpeg',
     },
     {
       name: 'Javeria Ali',
       pos: 'Media Head',
-      pic: './assets/mediahead2.jpeg',
+      pic: './assets/Team/mediahead2.jpeg',
     },
   ];
   const coreteammembers = [
     {
       name: 'Muhammad Ahmed',
       pos: 'Core Team Member',
-      pic: './assets/coreteammember1.jpeg',
+      pic: './assets/Team/coreteammember1.jpeg',
     },
     {
       name: 'Laiba Wajih',
       pos: 'Core Team Member',
-      pic: './assets/coreteammember2.jpeg',
+      pic: './assets/Team/coreteammember2.jpeg',
     },
   ];
   const eventplanner = [
     {
       name: 'Hirah Siddiqui',
       pos: 'Event Planner',
-      pic: './assets/eventplanner.jpeg',
+      pic: './assets/Team/eventplanner.jpeg',
     },
   ];
   const eventcoordinators = [
     {
       name: 'Mir Wali Chandio',
       pos: 'Event Coordinator',
-      pic: './assets/eventcoordinator.jpeg',
+      pic: './assets/Team/eventcoordinator.jpeg',
     },
     {
       name: 'Fiza Butt',
       pos: 'Co-Event Coordinator',
-      pic: './assets/coeventcoordinator.jpeg',
+      pic: './assets/Team/coeventcoordinator.jpeg',
     },
   ];
   const webdevelopers = [
     {
       name: 'Huzefa Mustafa',
       pos: 'Lead Web Developer',
-      pic: './assets/CYBER AI.png',
+      pic: './assets/Team/leadwebdeveloper.jpeg',
     },
     {
       name: 'Syeda Zehra Batool',
       pos: 'Co-Lead Web Developer',
-      pic: './assets/CYBER AI.png',
+      pic: './assets/Team/CYBER AI.png',
     },
   ];
   const graphicdesigner = [
     {
       name: 'Syeda Mehak',
       pos: 'Lead Graphic Designer',
-      pic: './assets/graphicdesigner.jpeg',
+      pic: './assets/Team/graphicdesigner.jpeg',
     },
   ];
   return (
@@ -152,11 +152,6 @@ const Teampage = () => {
           {graphicdesigner.map((eachmember, i) => (
             <MemberCard key={i} team={eachmember} />
           ))}
-        </div>
-      </section>
-      <section>
-        <div class="container">
-          <h2 class="teamsubheading">Our Team Members</h2>
         </div>
       </section>
       <Footer />
