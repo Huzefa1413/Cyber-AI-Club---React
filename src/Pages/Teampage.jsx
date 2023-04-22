@@ -1,7 +1,9 @@
 import React from 'react';
+
 import MemberCard from '../components/MemberCard';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+
 const Teampage = () => {
   const presidents = [
     {
@@ -74,7 +76,7 @@ const Teampage = () => {
     {
       name: 'Syeda Zehra Batool',
       pos: 'Co-Lead Web Developer',
-      pic: './assets/Team/CYBER AI.png',
+      pic: './assets/CYBER AI.png',
     },
   ];
   const graphicdesigner = [

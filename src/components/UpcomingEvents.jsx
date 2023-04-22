@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Event from './Event';
 
 const UpcomingEvents = () => {
@@ -9,12 +10,12 @@ const UpcomingEvents = () => {
       text: 'epellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?HuzefaLorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Huzefa',
       pic: './assets/CYBER AI.png',
     },
-    {
-      date: '24 Feb 2023',
-      title: 'Seminar',
-      text: 'lorem ipsum data hdiajadi',
-      pic: './assets/CYBER AI.png',
-    },
+    // {
+    //   date: '24 Feb 2023',
+    //   title: 'Seminar',
+    //   text: 'lorem ipsum data hdiajadi',
+    //   pic: './assets/CYBER AI.png',
+    // },
   ];
   return (
     <section id="upcoming-events">
