@@ -4,6 +4,8 @@ import MemberCard from '../components/MemberCard';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
+import Fade from 'react-reveal/Fade';
+
 const Teampage = () => {
   const presidents = [
     {
@@ -89,9 +91,11 @@ const Teampage = () => {
   return (
     <>
       <Navbar />
-      <section class="teamheading">
-        <h1 class="sub-heading">Meet Our Team</h1>
-      </section>
+      <Fade top>
+        <section class="teamheading">
+          <h1 class="sub-heading">Meet Our Team</h1>
+        </section>
+      </Fade>
       <section>
         <div class="container">
           <h2 class="teamsubheading">Our Presidents</h2>

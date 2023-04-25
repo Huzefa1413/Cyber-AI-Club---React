@@ -5,29 +5,38 @@ import Footer from '../components/Footer';
 import UpcomingEvents from '../components/UpcomingEvents';
 import LatestEvents from '../components/LatestEvents';
 
+import Zoom from 'react-reveal/Zoom';
+import Slide from 'react-reveal/Slide';
+
 const Homepage = () => {
   return (
     <>
       <Navbar />
       <section className="heading">
-        <h1>Welcome to Cyber AI Club</h1>
-        <p>Empowering Minds, Securing Futures</p>
+        <Zoom>
+          <h1>Welcome to Cyber AI Club</h1>
+          <p>Empowering Minds, Securing Futures</p>
+        </Zoom>
       </section>
       <UpcomingEvents />
-      <section className="joinus">
-        <h2>Want to be a part of US?</h2>
-        <button>
-          <a href="./joinusform.html">Join Us Now</a>
-        </button>
-      </section>
-      <section className="vision">
-        <h1>Our Vision</h1>
-        <p>
-          Our vision is to empower the future generation with knowledge and
-          skills in emerging technologies, specifically cyber and AI, through an
-          inclusive and collaborative platform.
-        </p>
-      </section>
+      <Slide left>
+        <section className="joinus">
+          <h2>Want to be a part of US?</h2>
+          <button>
+            <a href="./joinusform.html">Join Us Now</a>
+          </button>
+        </section>
+      </Slide>
+      <Slide right>
+        <section className="vision">
+          <h1>Our Vision</h1>
+          <p>
+            Our vision is to empower the future generation with knowledge and
+            skills in emerging technologies, specifically cyber and AI, through
+            an inclusive and collaborative platform.
+          </p>
+        </section>
+      </Slide>
       <LatestEvents />
       <Footer />
     </>

@@ -1,5 +1,10 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from 'react-router-dom';
 
 import Homepage from './Pages/Homepage';
 import Eventspage from './Pages/Eventspage';
@@ -14,6 +19,7 @@ const App = () => {
         <Route path="/events" element={<Eventspage />} />
         <Route path="/team" element={<Teampage />} />
         <Route path="/joinusform" element={<JoinUspage />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );
