@@ -38,9 +38,14 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <Link to="/joinusform" className="action_btn">
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfMXArDMegFgcToQPUc0gFF-h4jpzSGErMvzlVyLdeyrCQ-tw/closedform"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="action_btn"
+        >
           Join Us Now
-        </Link>
+        </a>
         <div className="toggle_btn" onClick={handleToggle}>
           <i className={isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars'}></i>
         </div>
@@ -68,9 +73,14 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/joinusform" className="action_btn">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfMXArDMegFgcToQPUc0gFF-h4jpzSGErMvzlVyLdeyrCQ-tw/closedform"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="action_btn"
+          >
             Join Us Now
-          </Link>
+          </a>
         </li>
       </div>
     </header>

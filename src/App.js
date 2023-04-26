@@ -9,7 +9,6 @@ import {
 import Homepage from './Pages/Homepage';
 import Eventspage from './Pages/Eventspage';
 import Teampage from './Pages/Teampage';
-import JoinUspage from './Pages/JoinUspage';
 
 const App = () => {
   return (
@@ -18,7 +17,6 @@ const App = () => {
         <Route path="/" element={<Homepage />} />
         <Route path="/events" element={<Eventspage />} />
         <Route path="/team" element={<Teampage />} />
-        <Route path="/joinusform" element={<JoinUspage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
