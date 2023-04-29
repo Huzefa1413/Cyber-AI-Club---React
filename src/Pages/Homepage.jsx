@@ -8,6 +8,8 @@ import LatestEvents from '../components/LatestEvents';
 import Zoom from 'react-reveal/Zoom';
 import Slide from 'react-reveal/Slide';
 
+import { Link } from 'react-router-dom';
+
 const Homepage = () => {
   return (
     <>
@@ -23,7 +25,7 @@ const Homepage = () => {
         <section className="joinus">
           <h2>Want to be a part of US?</h2>
           <button>
-            <a href="./joinusform.html">Join Us Now</a>
+            <Link to="/joinus">Join Us Now</Link>
           </button>
         </section>
       </Slide>
