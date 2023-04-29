@@ -9,6 +9,7 @@ import {
 import Homepage from './Pages/Homepage';
 import Eventspage from './Pages/Eventspage';
 import Teampage from './Pages/Teampage';
+import Joinuspage from './Pages/Joinuspage';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/" element={<Homepage />} />
         <Route path="/events" element={<Eventspage />} />
         <Route path="/team" element={<Teampage />} />
+        <Route path="/joinus" element={<Joinuspage />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>

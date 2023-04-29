@@ -355,6 +355,7 @@ section.teamheading {
   font-size: 1.3rem;
   text-transform: uppercase;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .blog-slider {

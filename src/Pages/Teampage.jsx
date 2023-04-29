@@ -78,7 +78,7 @@ const Teampage = () => {
     {
       name: 'Syeda Zehra Batool',
       pos: 'Co-Lead Web Developer',
-      pic: './assets/CYBER AI.png',
+      pic: './assets/Team/coleadwebdeveloper.jpg',
     },
   ];
   const graphicdesigner = [

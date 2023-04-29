@@ -10,17 +10,17 @@ const LatestEvents = () => {
   const location = useLocation();
   const latestevents = [
     {
-      date: '10 Feb 2023',
-      title: 'Seminar',
-      text: 'epellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?HuzefaLorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptate repellendus magni illo ea animi?Huzefa',
-      pic: './assets/CYBER AI.png',
+      date: '6 April 2023',
+      title: 'Club Interviews',
+      text: 'Things may come to those who wait, but only the things left by those who hustle✨✨ The interviews went off without any fuss!! Now cross the fingers and pray for the best❤️ #cs #it #ssuet #cyberaiclub',
+      pic: './assets/Events/interview.jpeg',
     },
-    {
-      date: '8 Feb 2023',
-      title: 'Seminar',
-      text: 'lorem ipsum data hdiajadi',
-      pic: './assets/CYBER AI.png',
-    },
+    // {
+    //   date: '8 Feb 2023',
+    //   title: 'Seminar',
+    //   text: 'lorem ipsum data hdiajadi',
+    //   pic: './assets/CYBER AI.png',
+    // },
   ];
   return (
     <section
@@ -31,7 +31,9 @@ const LatestEvents = () => {
         <h1 className="sub-heading">Latest News and Events</h1>
       </Fade>
       {latestevents.length <= 0 && (
-        <h2 className="sub-heading2">No Events Lined Up..</h2>
+        <Fade top>
+          <h2 className="sub-heading2">No Events Lined Up..</h2>
+        </Fade>
       )}
 
       {latestevents.map((eachevent, i) => (
