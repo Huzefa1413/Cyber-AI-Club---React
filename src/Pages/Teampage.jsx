@@ -92,69 +92,69 @@ const Teampage = () => {
     <>
       <Navbar />
       <Fade top>
-        <section class="teamheading">
-          <h1 class="sub-heading">Meet Our Team</h1>
+        <section className="teamheading">
+          <h1 className="sub-heading">Meet Our Team</h1>
         </section>
       </Fade>
       <section>
-        <div class="container">
-          <h2 class="teamsubheading">Our Presidents</h2>
+        <div className="container"> 
+          <h2 className="teamsubheading">Our Presidents</h2>
           {presidents.map((eachmember, i) => (
             <MemberCard key={i} team={eachmember} />
           ))}
         </div>
       </section>
       <section>
-        <div class="container">
-          <h2 class="teamsubheading">Our General Secretary</h2>
+        <div className="container">
+          <h2 className="teamsubheading">Our General Secretary</h2>
           {generalsecretary.map((eachmember, i) => (
             <MemberCard key={i} team={eachmember} />
           ))}
         </div>
       </section>
       <section>
-        <div class="container">
-          <h2 class="teamsubheading">Our Media Heads</h2>
+        <div className="container">
+          <h2 className="teamsubheading">Our Media Heads</h2>
           {mediaheads.map((eachmember, i) => (
             <MemberCard key={i} team={eachmember} />
           ))}
         </div>
       </section>
       <section>
-        <div class="container">
-          <h2 class="teamsubheading">Our Core Team Members</h2>
+        <div className="container">
+          <h2 className="teamsubheading">Our Core Team Members</h2>
           {coreteammembers.map((eachmember, i) => (
             <MemberCard key={i} team={eachmember} />
           ))}
         </div>
       </section>
       <section>
-        <div class="container">
-          <h2 class="teamsubheading">Our Event Planner</h2>
+        <div className="container">
+          <h2 className="teamsubheading">Our Event Planner</h2>
           {eventplanner.map((eachmember, i) => (
             <MemberCard key={i} team={eachmember} />
           ))}
         </div>
       </section>
       <section>
-        <div class="container">
-          <h2 class="teamsubheading">Our Event Co-ordinators</h2>
+        <div className="container">
+          <h2 className="teamsubheading">Our Event Co-ordinators</h2>
           {eventcoordinators.map((eachmember, i) => (
             <MemberCard key={i} team={eachmember} />
           ))}
         </div>
       </section>
       <section>
-        <div class="container">
-          <h2 class="teamsubheading">Our Web Developers</h2>
+        <div className="container">
+          <h2 className="teamsubheading">Our Web Developers</h2>
           {webdevelopers.map((eachmember, i) => (
             <MemberCard key={i} team={eachmember} />
           ))}
         </div>
       </section>
       <section>
-        <div class="container">
-          <h2 class="teamsubheading">Our Graphic Designer</h2>
+        <div className="container">
+          <h2 className="teamsubheading">Our Graphic Designer</h2>
           {graphicdesigner.map((eachmember, i) => (
             <MemberCard key={i} team={eachmember} />
           ))}
