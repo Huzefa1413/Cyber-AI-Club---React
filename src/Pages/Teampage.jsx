@@ -7,85 +7,121 @@ import Footer from '../components/Footer';
 import Fade from 'react-reveal/Fade';
 
 const Teampage = () => {
-  const presidents = [
+  const team = [
     {
-      name: 'Muhammad Jawwad',
-      pos: 'President',
-      pic: './assets/Team/president.jpeg',
+      heading: 'Our Director',
+      member: [
+        {
+          name: 'Dr Waleej Haider',
+          pos: 'Director',
+          pic: './assets/Team/director.jpeg',
+        },
+      ],
     },
     {
-      name: 'Muhammad Umer Amir',
-      pos: 'Vice-President',
-      pic: './assets/Team/vicepresident.jpeg',
-    },
-  ];
-  const generalsecretary = [
-    {
-      name: 'Daniyal Jameel',
-      pos: 'General Secretary',
-      pic: './assets/Team/generalsecretary.jpeg',
-    },
-  ];
-  const mediaheads = [
-    {
-      name: 'Saim Rafi',
-      pos: 'Media Head',
-      pic: './assets/Team/mediahead1.jpeg',
+      heading: 'Our Presidents',
+      member: [
+        {
+          name: 'Muhammad Jawwad',
+          pos: 'President',
+          pic: './assets/Team/president.jpeg',
+        },
+        {
+          name: 'Muhammad Umer Amir',
+          pos: 'Vice-President',
+          pic: './assets/Team/vicepresident.jpeg',
+        },
+      ],
     },
     {
-      name: 'Javeria Ali',
-      pos: 'Media Head',
-      pic: './assets/Team/mediahead2.jpeg',
-    },
-  ];
-  const coreteammembers = [
-    {
-      name: 'Muhammad Ahmed',
-      pos: 'Core Team Member',
-      pic: './assets/Team/coreteammember1.jpeg',
+      heading: 'Our General Secretary',
+      member: [
+        {
+          name: 'Daniyal Jameel',
+          pos: 'General Secretary',
+          pic: './assets/Team/generalsecretary.jpeg',
+        },
+      ],
     },
     {
-      name: 'Laiba Wajih',
-      pos: 'Core Team Member',
-      pic: './assets/Team/coreteammember2.jpeg',
-    },
-  ];
-  const eventplanner = [
-    {
-      name: 'Hirah Siddiqui',
-      pos: 'Event Planner',
-      pic: './assets/Team/eventplanner.jpeg',
-    },
-  ];
-  const eventcoordinators = [
-    {
-      name: 'Mir Wali Chandio',
-      pos: 'Event Coordinator',
-      pic: './assets/Team/eventcoordinator.jpeg',
+      heading: 'Our Media Heads',
+      member: [
+        {
+          name: 'Saim Rafi',
+          pos: 'Media Head',
+          pic: './assets/Team/mediahead1.jpeg',
+        },
+        {
+          name: 'Javeria Ali',
+          pos: 'Media Head',
+          pic: './assets/Team/mediahead2.jpeg',
+        },
+      ],
     },
     {
-      name: 'Fiza Butt',
-      pos: 'Co-Event Coordinator',
-      pic: './assets/Team/coeventcoordinator.jpeg',
+      heading: 'Our Core Team Members',
+      member: [
+        {
+          name: 'Muhammad Ahmed',
+          pos: 'Core Team Member',
+          pic: './assets/Team/coreteammember1.jpeg',
+        },
+        {
+          name: 'Laiba Wajih',
+          pos: 'Core Team Member',
+          pic: './assets/Team/coreteammember2.jpeg',
+        },
+      ],
     },
-  ];
-  const webdevelopers = [
     {
-      name: 'Huzefa Mustafa',
-      pos: 'Lead Web Developer',
-      pic: './assets/Team/leadwebdeveloper.jpeg',
+      heading: 'Our Event Planner',
+      member: [
+        {
+          name: 'Hirah Siddiqui',
+          pos: 'Event Planner',
+          pic: './assets/Team/eventplanner.jpeg',
+        },
+      ],
     },
     {
-      name: 'Syeda Zehra Batool',
-      pos: 'Co-Lead Web Developer',
-      pic: './assets/Team/coleadwebdeveloper.jpg',
+      heading: 'Our Event Co-ordinators',
+      member: [
+        {
+          name: 'Mir Wali Chandio',
+          pos: 'Event Coordinator',
+          pic: './assets/Team/eventcoordinator.jpeg',
+        },
+        {
+          name: 'Fiza Butt',
+          pos: 'Co-Event Coordinator',
+          pic: './assets/Team/coeventcoordinator.jpeg',
+        },
+      ],
     },
-  ];
-  const graphicdesigner = [
     {
-      name: 'Syeda Mehak',
-      pos: 'Lead Graphic Designer',
-      pic: './assets/Team/graphicdesigner.jpeg',
+      heading: 'Our Web Developers',
+      member: [
+        {
+          name: 'Huzefa Mustafa',
+          pos: 'Lead Web Developer',
+          pic: './assets/Team/leadwebdeveloper.jpeg',
+        },
+        {
+          name: 'Syeda Zehra Batool',
+          pos: 'Co-Lead Web Developer',
+          pic: './assets/Team/coleadwebdeveloper.jpg',
+        },
+      ],
+    },
+    {
+      heading: 'Our Graphic Designer',
+      member: [
+        {
+          name: 'Syeda Mehak',
+          pos: 'Lead Graphic Designer',
+          pic: './assets/Team/graphicdesigner.jpeg',
+        },
+      ],
     },
   ];
   return (
@@ -96,70 +132,16 @@ const Teampage = () => {
           <h1 className="sub-heading">Meet Our Team</h1>
         </section>
       </Fade>
-      <section>
-        <div className="container"> 
-          <h2 className="teamsubheading">Our Presidents</h2>
-          {presidents.map((eachmember, i) => (
-            <MemberCard key={i} team={eachmember} />
-          ))}
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <h2 className="teamsubheading">Our General Secretary</h2>
-          {generalsecretary.map((eachmember, i) => (
-            <MemberCard key={i} team={eachmember} />
-          ))}
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <h2 className="teamsubheading">Our Media Heads</h2>
-          {mediaheads.map((eachmember, i) => (
-            <MemberCard key={i} team={eachmember} />
-          ))}
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <h2 className="teamsubheading">Our Core Team Members</h2>
-          {coreteammembers.map((eachmember, i) => (
-            <MemberCard key={i} team={eachmember} />
-          ))}
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <h2 className="teamsubheading">Our Event Planner</h2>
-          {eventplanner.map((eachmember, i) => (
-            <MemberCard key={i} team={eachmember} />
-          ))}
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <h2 className="teamsubheading">Our Event Co-ordinators</h2>
-          {eventcoordinators.map((eachmember, i) => (
-            <MemberCard key={i} team={eachmember} />
-          ))}
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <h2 className="teamsubheading">Our Web Developers</h2>
-          {webdevelopers.map((eachmember, i) => (
-            <MemberCard key={i} team={eachmember} />
-          ))}
-        </div>
-      </section>
-      <section>
-        <div className="container">
-          <h2 className="teamsubheading">Our Graphic Designer</h2>
-          {graphicdesigner.map((eachmember, i) => (
-            <MemberCard key={i} team={eachmember} />
-          ))}
-        </div>
-      </section>
+      {team.map((t, i) => (
+        <section key={i}>
+          <div className="container">
+            <h2 className="teamsubheading">{t.heading}</h2>
+            {t.member.map((eachmember, i) => (
+              <MemberCard key={i} team={eachmember} />
+            ))}
+          </div>
+        </section>
+      ))}
       <Footer />
     </>
   );
