@@ -2,8 +2,6 @@ import React from 'react';
 
 import Event from './Event';
 
-import Fade from 'react-reveal/Fade';
-
 const UpcomingEvents = () => {
   const upcomingevents = [
     // {
@@ -21,13 +19,9 @@ const UpcomingEvents = () => {
   ];
   return (
     <section id="upcoming-events">
-      <Fade top>
         <h1 className="sub-heading">Upcoming Events</h1>
-      </Fade>
       {upcomingevents <= 0 && (
-        <Fade top>
           <h2 className="sub-heading2">No Events Lined Up..</h2>
-        </Fade>
       )}
       {upcomingevents.map((eachevent, i) => (
         <Event key={i} event={eachevent} />

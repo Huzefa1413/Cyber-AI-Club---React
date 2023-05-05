@@ -4,8 +4,6 @@ import { useLocation } from 'react-router-dom';
 
 import Event from './Event';
 
-import Fade from 'react-reveal/Fade';
-
 const LatestEvents = () => {
   const location = useLocation();
   const latestevents = [
@@ -27,13 +25,9 @@ const LatestEvents = () => {
       id="latest-events"
       className={location.pathname === '/' ? 'latesteventhome' : ''}
     >
-      <Fade top>
-        <h1 className="sub-heading">Latest News and Events</h1>
-      </Fade>
+      <h1 className="sub-heading">Latest News and Events</h1>
       {latestevents.length <= 0 && (
-        <Fade top>
-          <h2 className="sub-heading2">No Events Lined Up..</h2>
-        </Fade>
+        <h2 className="sub-heading2">No Events Lined Up..</h2>
       )}
 
       {latestevents.map((eachevent, i) => (
