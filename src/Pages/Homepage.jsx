@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -7,7 +7,13 @@ import LatestEvents from '../components/LatestEvents';
 
 import { Link } from 'react-router-dom';
 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+
 const Homepage = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <>
       <Navbar />
@@ -16,13 +22,13 @@ const Homepage = () => {
         <p>Empowering Minds, Securing Futures</p>
       </section>
       <UpcomingEvents />
-      <section className="joinus">
+      <section className="joinus" data-aos="flip-right">
         <h2>Want to be a part of US?</h2>
         <button>
           <Link to="/joinus">Join Us Now</Link>
         </button>
       </section>
-      <section className="vision">
+      <section className="vision" data-aos="flip-left">
         <h1>Our Vision</h1>
         <p>
           Our vision is to empower the future generation with knowledge and

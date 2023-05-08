@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Event = (props) => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
-    <div className="blog-slider">
+    <div className="blog-slider" data-aos="fade-right">
       <div className="blog-slider__wrp swiper-wrapper">
         <div className="blog-slider__item">
           <div className="blog-slider__img">
