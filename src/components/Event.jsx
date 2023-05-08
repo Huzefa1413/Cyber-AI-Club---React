@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 const Event = (props) => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 2000, once: true });
   }, []);
   return (
     <div className="blog-slider" data-aos="fade-right">
