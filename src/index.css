@@ -605,7 +605,8 @@ form {
 }
 .form-item input[type='text'],
 input[type='number'],
-input[type='email'] {
+input[type='email'],
+input[type='password'] {
   display: block;
   color: #e2e3e8;
   font-size: 16px;
