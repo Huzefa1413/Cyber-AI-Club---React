@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import UpcomingEvents from '../components/UpcomingEvents';
 import LatestEvents from '../components/LatestEvents';
+import Ads from '../components/Ads';
 
 import { Link } from 'react-router-dom';
 
@@ -17,9 +18,12 @@ const Homepage = () => {
   return (
     <>
       <Navbar />
-      <section className="heading">
-        <h1>Welcome to Cyber AI Club</h1>
-        <p>Empowering Minds, Securing Futures</p>
+      <section class="heading">
+        <div class="heading-content">
+          <h1>Welcome to Cyber AI Club</h1>
+          <p>Empowering Minds, Securing Futures</p>
+        </div>
+        <Ads />
       </section>
       <UpcomingEvents />
       <section className="joinus" data-aos="flip-right">
